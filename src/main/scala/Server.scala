@@ -1,4 +1,4 @@
-package com.example
+package nescala
 
 import unfiltered.netty.cycle.Planify
 

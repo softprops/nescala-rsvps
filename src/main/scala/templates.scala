@@ -1,3 +1,5 @@
+package nescala
+
 object Templates {
   import scala.xml._
   import unfiltered.response.Html
