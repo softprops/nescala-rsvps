@@ -6,8 +6,7 @@ object Server {
 
   def main(args: Array[String]) {
     unfiltered.netty.Http(8080)
-      .handler(Palindrome)
-      .handler(Time)
+      .handler(SearchPlan)
       .run { s =>
         logger.info("starting unfiltered app at localhost on port %s"
                     .format(s.port))
