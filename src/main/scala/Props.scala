@@ -1,3 +1,4 @@
+package nescala
 
 object Props {
   private lazy val props = {

@@ -1,26 +1,8 @@
-package com.example
+package nescala
 
 import unfiltered.netty.cycle.Planify
 
-import unfiltered.response.Html
-
 import java.net.URL
-
-object Templates {
-  import scala.xml._
-  def layout(body: NodeSeq) =
-    Html(
-      <html>
-        <head>
-          <link type="text/css" href="/css/app.css"/>
-          <script type="text/javascript" src="/js/app.js"></script>
-        </head>
-        <body>yep. it works</body>
-     </html>)
-
-  def index = layout(<div>it works</div>)
-
-}
 
 /** embedded server */
 object Server {
@@ -33,7 +15,7 @@ object Server {
         logger.info("starting unfiltered app at localhost on port %s"
                     .format(s.port))
         unfiltered.util.Browser.open(
-          "http://127.0.0.1:%d/".format(s.port)
+          "http://127.0.0.1:%d/search".format(s.port)
         )
       }
   }

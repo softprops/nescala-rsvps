@@ -1,4 +1,4 @@
-package com.example
+package nescala
 
 import unfiltered.request._
 import unfiltered.response._
