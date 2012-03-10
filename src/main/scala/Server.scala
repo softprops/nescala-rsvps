@@ -27,10 +27,9 @@ object Server {
   val logger = org.clapper.avsl.Logger(Server.getClass)
   def main(args: Array[String]) {
     unfiltered.netty.Http(8080)
+      .handler(SearchPlan)
       .resources(getClass.getResource("/www"))
-      .handler(Planify{
-        case _ => Templates.index
-      }).run { s =>
+      .run { s =>
         logger.info("starting unfiltered app at localhost on port %s"
                     .format(s.port))
         unfiltered.util.Browser.open(
