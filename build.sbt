@@ -5,6 +5,7 @@ name := "rsvpz"
 version := "0.1.0-SNAPSHOT"
 
 libraryDependencies ++= Seq(
+   "net.liftweb" %% "lift-json" % "2.4-M4",
    "net.databinder" %% "unfiltered-netty-server" % "0.6.1",
    "net.databinder.dispatch" %% "core" % "0.9.0-alpha2",
    "org.clapper" %% "avsl" % "0.3.6",
