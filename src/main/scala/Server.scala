@@ -12,8 +12,8 @@ object Templates {
     Html(
       <html>
         <head>
-          <link href="/css/app.css"/>
-          <script src="/js/app.js"></script>
+          <link type="text/css" href="/css/app.css"/>
+          <script type="text/javascript" src="/js/app.js"></script>
         </head>
         <body>yep. it works</body>
      </html>)
@@ -21,7 +21,6 @@ object Templates {
   def index = layout(<div>it works</div>)
 
 }
-
 
 /** embedded server */
 object Server {
