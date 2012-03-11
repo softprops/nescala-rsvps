@@ -1,8 +1,13 @@
-organization := "com.example"
+organization := "nescala"
 
-name := "rsvpz"
+name := "nescala-rsvps"
 
 version := "0.1.0-SNAPSHOT"
+
+seq(coffeeSettings: _*)
+
+(resourceManaged in (Compile, CoffeeKeys.coffee)) <<= (
+  crossTarget in Compile)(_ / "classes" / "www" / "js")
 
 libraryDependencies ++= Seq(
    "net.liftweb" %% "lift-json" % "2.4-M4",

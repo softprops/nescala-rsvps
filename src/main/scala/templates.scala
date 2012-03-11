@@ -7,10 +7,14 @@ object Templates {
     Html(
       <html>
         <head>
-          <link type="text/css" href="/css/app.css"/>
-          <script type="text/javascript" src="/js/app.js"></script>
+          <title>nescala rsvps</title>
+          <link type="text/css" href="/css/app.css"/>          
         </head>
-        <body>yep. it works</body>
+        <body>
+          yep. it works
+         <script type="text/javascript" src="/js/jquery.min.js"></script>
+         <script type="text/javascript" src="/js/app.js"></script>
+        </body>
      </html>)
 
   def index = layout(<div>it works</div>)
